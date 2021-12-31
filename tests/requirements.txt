@@ -1,0 +1,9 @@
+diffprivlib==0.4.1
+gym
+mlflow
+sklearn
+numpy
+ctgan
+opacus
+torch
+pytest
