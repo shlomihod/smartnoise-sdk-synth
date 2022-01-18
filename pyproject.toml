@@ -14,6 +14,7 @@ python = ">=3.6.8,<3.9"
 ctgan = "^0.4.3"
 opacus = "^0.14.0"
 opendp = "^0.3.0"
+tqdm = "^4.62.3"
 
 [tool.poetry.dev-dependencies]
 

@@ -6,6 +6,7 @@ from functools import wraps
 
 import numpy as np
 import pandas as pd
+from tqdm import trange
 
 from snsynth.base import SDGYMBaseSynthesizer
 
@@ -240,7 +241,7 @@ class MWEMSynthesizer(SDGYMBaseSynthesizer):
                     Warning,
                 )
 
-            for i in range(self.iterations):
+            for i in trange(self.iterations):
                 # print("Iteration: " + str(i))
                 qi = self._exponential_mechanism(
                     hist, synth_hist, queries, ((self.epsilon / (2 * self.iterations)) / len(self.histograms))
